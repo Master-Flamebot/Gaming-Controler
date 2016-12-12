@@ -1,0 +1,14 @@
+import pygame
+pygame.joystick.init()
+
+def Fish():
+    joystick_count = pygame.joystick.get_count()
+    
+    for i in range(joystick_count):
+        joystick = pygame.joystick.Joystick(i)
+        joystick.init()
+        
+    for i in range( axes ):
+        axis = joystick.get_axis( i )
+        print("hi")
+    
